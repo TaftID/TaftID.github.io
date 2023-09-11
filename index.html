@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Italiana&display=swap" rel="stylesheet">
+
+    <!-- Lenis -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.22/bundled/lenis.min.js"></script>
+    
+    <!-- GSAP & ScollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"></script>
+
+    <!-- Split Type -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Dot Cursor Start -->
+    <div class="dot-cursor hidden"></div>
+    <!-- Dot Cursor End -->
+
+    <!-- Container Start -->
+    <div class="container">
+
+      <!-- Navbar Start -->
+      <nav class="">
+        <div class="row d_flex ai_center">
+          <div class="col flex_1">
+            <a href="#header" onclick="lenis.scrollTo('#header')" class="nav__link nav__logo hovered d_flex ai_center"><div class="circle"></div>Taft ID&reg;</a>
+          </div>
+          <div class="col flex_1 d_flex max-w767_d_none jc_center">
+            <a href="#about" onclick="lenis.scrollTo('#about')" class="nav__link hovered">About</a>
+            <a href="#works" onclick="lenis.scrollTo('#works')" class="nav__link hovered">Works</a>
+            <a href="#article" onclick="lenis.scrollTo('#article')" class="nav__link hovered">Article</a>
+            <a href="#skills" onclick="lenis.scrollTo('#skills')" class="nav__link hovered">Skills</a>
+          </div>
+          <div class="col flex_1 d_flex max-w767_d_none jc_flex-end">
+            <a href="#contact" onclick="lenis.scrollTo('#contact')" class="nav__link hovered ws_no-wrap">Get in touch</a>
+          </div>
+          <div class="col flex_1 d_none max-w767_d_flex jc_flex-end">
+            <a href="" class="toggle-btn">
+              <span class="d_flex"></span>
+              <span class="d_flex"></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="toggle-menu d_none max-w767_d_flex">
+        <div class="row flex_1 d_flex fd_column jc_center ai_center">
+          <a href="#about" onclick="lenis.scrollTo('#about')" class="nav__link hovered">About</a>
+          <a href="#works" onclick="lenis.scrollTo('#works')" class="nav__link hovered">Works</a>
+          <a href="#article" onclick="lenis.scrollTo('#article')" class="nav__link hovered">Article</a>
+          <a href="#skills" onclick="lenis.scrollTo('#skills')" class="nav__link hovered">Skills</a>
+          <a href="#contact" onclick="lenis.scrollTo('#contact')" class="nav__link hovered ws_no-wrap">Get in touch</a>
+        </div>
+      </div>
+      <!-- Navbar End -->
+      
+      <!-- Dark Main Start -->
+      <main class="dark">
+
+        <!-- Header Start -->
+        <header class="d_flex" id="header">
+          <div class="row flex_1 d_flex fd_column max-w767_jc_center">
+            <div class="col flex_1 d_flex ai_center">
+              <div class="header__headings flex_1">
+                <div class="header__heading d_none max-w767_d_flex line-height_010 uppercase">I Create Any Digital Product</div>
+                <div class="header__heading max-w767_d_none line-height_010 text_start uppercase">I Create</div>
+                <div class="header__heading max-w767_d_none line-height_010 text_center uppercase">— <span class="">Any</span> Digital</div>
+                <div class="header__heading max-w767_d_none line-height_010 text_end uppercase">Product</div>
+              </div>
+            </div>
+            <div class="absolute_col d_flex jc_space-between">
+              <div class="paragraphs d_flex fd_column">
+                <p class="line-height_016">I design and create websites, UI/UX, and visual content for brands, companies, and individuals.</p>
+              </div>
+              <a href="" class="scroll-btn d_flex max-w767_d_none jc_center ai_center">
+                <i class="ri-arrow-down-line"></i>
+              </a>
+            </div>
+          </div>
+        </header>
+        <!-- Header End -->
+        
+        <!-- About Section Start -->
+        <section class="about" id="about">
+          <div class="row">
+            <div class="col d_flex max-w767_fd_column ai_center max-w767_ai_flex-start">
+              <div class="titles">
+                <div class="title line-height_010">Self</div>
+                <div class="title line-height_010">Overview</div>
+              </div>
+              <div class="p_10-0"></div>
+              <img src="img/hero-1.jpg" alt="Tafta Zani" width="435" class="profile-image d_flex">
+            </div>
+            <div class="col">
+              <div class="accordion-container">
+                <div class="accordion-btn d_flex jc_space-between ai_center">
+                  <div class="sub_text">(1/3)&nbsp;&nbsp;Personal Information</div>
+                  <i class="ri-arrow-down-s-line ri"></i>
+                </div>
+                <div class="panel d_flex fd_column">
+                  <p class="line-height_016">
+                    I am Tafta Zani, a visual creator and developer who is passionate about creating digital 
+                    products. With an educational background from Potensi Utama University, I have 2 years of 
+                    experience in the dual role of a Creative Designer & Developer. My strong technical skills 
+                    and creative imagination allow me to combine appealing aesthetics with sophisticated 
+                    functionality in every project.
+                  </p>
+                  <p class="line-height_016">
+                    In my capacity as a Creative Designer & Developer, I bring a unique blend of artistic 
+                    flair and technical acumen to the world of digital products. With a solid foundation in 
+                    design principles and coding languages, I embark on each project with the intention of 
+                    crafting immersive user experiences.
+                  </p>
+                  <div class="pills d_flex fw_wrap">
+                    <div class="pill ws_no-wrap"><p>Tafta Zani</p></div>
+                    <div class="pill ws_no-wrap"><p>20 Years Old</p></div>
+                    <div class="pill ws_no-wrap"><p>Designer</p></div>
+                    <div class="pill ws_no-wrap"><p>Developer</p></div>
+                  </div>
+                  <div class="panel_padding"></div>
+                </div>
+                <div class="accordion-btn d_flex jc_space-between ai_center">
+                  <div class="sub_text">(2/3)&nbsp;&nbsp;Product Design</div>
+                  <i class="ri-arrow-down-s-line ri"></i>
+                </div>
+                <div class="panel d_flex fd_column">
+                  <p class="line-height_016">
+                    Product Design is my passion and expertise, a harmonious blend of creativity and 
+                    practicality. As a dedicated Creative Designer & Developer, I thrive on crafting digital 
+                    products that not only look exceptional but also provide seamless user experiences. From 
+                    initial concept to final execution, my focus remains unwaveringly centered on delivering 
+                    designs that resonate with users on a profound level.
+                  </p>
+                  <p class="line-height_016">
+                    By understanding the needs and behaviors of users, I create designs that cater to their 
+                    aspirations and challenges. This involves a meticulous process of wireframing, prototyping, 
+                    and continuous testing, ensuring that every element serves a purpose while maintaining an 
+                    elegant aesthetic. Collaborating with multidisciplinary teams and clients, I channel these 
+                    insights into comprehensive design solutions, resulting in products that stand out in a 
+                    dynamic and competitive digital landscape.
+                  </p>
+                  <div class="pills d_flex fw_wrap">
+                    <div class="pill ws_no-wrap"><p>UI Design</p></div>
+                    <div class="pill ws_no-wrap"><p>UX Design</p></div>
+                    <div class="pill ws_no-wrap"><p>Web Design</p></div>
+                    <div class="pill ws_no-wrap"><p>Resume Design</p></div>
+                    <div class="pill ws_no-wrap"><p>Visual Design</p></div>
+                  </div>
+                  <div class="panel_padding"></div>
+                </div>      
+                <div class="accordion-btn d_flex jc_space-between ai_center">
+                  <div class="sub_text">(3/3)&nbsp;&nbsp;Development</div>
+                  <i class="ri-arrow-down-s-line ri"></i>
+                </div>
+                <div class="panel d_flex fd_column">
+                  <p class="line-height_016">
+                    Development is where my creative vision takes shape in the digital realm. As a passionate 
+                    Creative Designer & Developer, I revel in the process of turning concepts into interactive 
+                    realities through code. My expertise lies in writing clean, effective code that marries 
+                    aesthetic design with seamless functionality, ensuring that the user experience remains at 
+                    the forefront.
+                  </p>
+                  <p class="line-height_016">
+                    Despite working alone, collaboration remains a core approach in my development journey. I 
+                    merge design and development skills to create digital products that not only visually 
+                    captivate but also offer intuitive interactions. The synergy between design and development 
+                    drives my commitment to staying at the forefront of industry trends and emerging 
+                    technologies, enabling me to create solutions that resonate with users in the ever-evolving 
+                    digital landscape.
+                  </p>
+                  <div class="pills d_flex fw_wrap">
+                    <div class="pill ws_no-wrap"><p>UI Development</p></div>
+                    <div class="pill ws_no-wrap"><p>UX Development</p></div>
+                    <div class="pill ws_no-wrap"><p>Front-End Development</p></div>
+                    <div class="pill ws_no-wrap"><p>Web Development</p></div>
+                  </div>
+                  <div class="panel_padding"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- About Section End -->
+
+        <!-- Works Section Start -->
+        <section class="works d_flex fd_column" id="works">
+          <div class="row d_flex jc_space-between ai_center">
+            <div class="col">
+              <div class="pill ws_no-wrap"><p>Taft ID&reg; Works</p></div>
+            </div>
+            <div class="col">
+              <a href="" class="nav__link">View more</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img src="img/websites.jpg" alt="" class="d_flex hero_image">
+              <div class="pills d_flex max-w767_d_none">
+                <div class="pill ws_no-wrap"><p>UI Design</div>
+                <div class="pill ws_no-wrap"><p>UX Design</div>
+                <div class="pill ws_no-wrap"><p>Front-End Development</div>
+              </div>
+            </div>
+            <div class="col">
+              <img src="img/project-1.jpg" alt="" class="d_flex hero_image">
+              <div class="pills d_flex max-w767_d_none">
+                <div class="pill ws_no-wrap"><p>UI Design</div>
+                <div class="pill ws_no-wrap"><p>UX Design</div>
+                <div class="pill ws_no-wrap"><p>Front-End Development</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Works Section End -->
+
+        <!-- Article Section Start -->
+        <section class="article" id="article">
+          <div class="canvas d_flex fd_column">
+            <div class="row d_flex jc_space-between">
+              <div class="col max-w767_d_none">
+                <div class="title line-height_010">My</div>
+                <div class="title line-height_010">Journey</div>
+              </div>
+              <div class="col d_none max-w767_d_flex">
+                <div class="title line-height_010">My Journey</div>
+              </div>
+              <div class="col max-w767_d_none">
+                <img src="img/sticker.png" alt="" width="144" class="sticker">
+              </div>
+            </div>
+            <div class="row d_flex fd_column">
+              <div class="col flex_1 d_flex max-w767_fd_column jc_space-between">
+                <p class="line-height_016 flex_1">
+                  I aim to showcase my creative work in design and web development, eager for new projects to 
+                  explore my creative limits.
+                </p>
+                <div class="p_20-20"></div>
+                <p class="line-height_016 flex_1">
+                  I'm continuously seeking fresh opportunities to push my creative boundaries to new heights in 
+                  the realms of UI and UX design, along with web development.
+                </p>
+              </div>
+              <div class="p_20-0"></div>
+              <div class="col flex_1 d_flex max-w767_fd_column jc_space-between">
+                <p class="line-height_016 flex_1">
+                  I've fused graphic design and web development for well-rounded solutions in my projects, 
+                  emphasizing both captivating design and efficient functionality.
+                </p>
+                <div class="p_20-20"></div>
+                <p class="line-height_016 flex_1">
+                  Collaboration is crucial in my creative journey. Working with diverse teams underscores 
+                  effective communication for shared creative visions.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="text line-height_014">
+                  Forging my creative path with an unwavering passion, I am driven by
+                </div>
+              </div>
+              <div class="col d_flex jc_flex-end">
+                <div class="text text_end">
+                  a relentless commitment to my craft and a deep love for what I do.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sub_section">
+            <div class="row">
+              <div class="col">
+                <div class="pill ws_no-wrap"><p>Taft ID&reg; Journey</p></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="text line-height_014">
+                  I believe in forging my creative path, always seeking better ways to do things. Passion drives 
+                  me, and every experience is a step in my evolution.
+                </div>
+                <div class="text line-height_014">
+                  Above all, I have an unshakable faith in the transformative power of exceptional design.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Article Section End -->
+
+      </main>
+      <!-- Dark Main End -->
+
+      <!-- Light Main Start -->
+      <main class="light">
+
+        <!-- Skills Section Start -->
+        <section class="skills" id="skills">
+          <div class="row d_flex max-w767_fd_column">
+            <div class="col flex_1">
+              <div class="title">My Skills</div>
+            </div>
+            <div class="p_20-0"></div>
+            <div class="col flex_1 d_flex jc_flex-end max-w767_jc_flex-start ai_flex-end">
+              <p class="line-height_016">
+                Listed below, you'll find a concise yet comprehensive overview of my diverse range of skills, 
+                competencies, and areas of expertise.
+              </p>
+            </div>
+          </div>
+          <div class="hr"></div>
+          <div class="row swiper-container">
+            <div class="col swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide__row">
+                  <img src="img/html.png" alt="" width="64" class="icon d_flex">
+                  <div class="swiper-slide__description">
+                    <div class="sub_text weight_500">HTML</div>
+                    <div class="d_flex">
+                      <p class="line-height_016">Tools that must be used when building a website</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__row">
+                  <img src="img/css.png" alt="" width="64" class="icon d_flex">
+                  <div class="swiper-slide__description">
+                    <div class="sub_text weight_500">CSS</div>
+                    <div class="d_flex">
+                      <p class="line-height_016">Tools that must be used when styling a website</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__row">
+                  <img src="img/js.png" alt="" width="64" class="icon d_flex">
+                  <div class="swiper-slide__description">
+                    <div class="sub_text weight_500">JS</div>
+                    <div class="d_flex">
+                      <p class="line-height_016">This one serves to make a website more interactive</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__row">
+                  <img src="img/php.png" alt="" width="64" class="icon d_flex">
+                  <div class="swiper-slide__description">
+                    <div class="sub_text weight_500">PHP</div>
+                    <div class="d_flex">
+                      <p class="line-height_016">I use this in development to write server-side scripts</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__row">
+                  <img src="img/react.png" alt="" width="64" class="icon d_flex">
+                  <div class="swiper-slide__description">
+                    <div class="sub_text weight_500">React JS</div>
+                    <div class="d_flex">
+                      <p class="line-height_016">Here are the tools used to create a web application</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__row">
+                  <img src="img/mysql.png" alt="" width="64" class="icon d_flex">
+                  <div class="swiper-slide__description">
+                    <div class="sub_text weight_500">MySQL</div>
+                    <div class="d_flex">
+                      <p class="line-height_016">A tool that really helped me in creating a database</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__row">
+                  <img src="img/photoshop.png" alt="" width="64" class="icon d_flex">
+                  <div class="swiper-slide__description">
+                    <div class="sub_text weight_500">Photoshop</div>
+                    <div class="d_flex">
+                      <p class="line-height_016">Tools for photo editing and creating visual content</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__row">
+                  <img src="img/figma.png" alt="" width="64" class="icon d_flex">
+                  <div class="swiper-slide__description">
+                    <div class="sub_text weight_500">Figma</div>
+                    <div class="d_flex">
+                      <p class="line-height_016">This is what I use when designing a UI/UX & website</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="marquee d_flex ws_no-wrap">
+            <span class="marquee-field uppercase">
+              Dream&nbsp;&mdash;
+              Creative&nbsp;&mdash;
+              Improvement&nbsp;&mdash;
+              Result&nbsp;&mdash;
+              Dream&nbsp;&mdash;
+              Creative&nbsp;&mdash;
+              Improvement&nbsp;&mdash;
+              Result&nbsp;&mdash;
+            </span>
+            <span class="marquee-field uppercase">
+              Dream&nbsp;&mdash;
+              Creative&nbsp;&mdash;
+              Improvement&nbsp;&mdash;
+              Result&nbsp;&mdash;
+              Dream&nbsp;&mdash;
+              Creative&nbsp;&mdash;
+              Improvement&nbsp;&mdash;
+              Result&nbsp;&mdash;
+            </span>
+          </div>
+        </section>
+        <!-- Skills Section End -->
+
+        <!-- Footer Section Start -->
+        <footer class="" id="contact">
+          <div class="canvas d_flex fd_column rgap_40">
+            <div class="row">
+              <div class="col">
+                <div class="title">Get In Touch</div>
+              </div>
+            </div>
+            <div class="row d_flex fw_wrap rgap_80 cgap_80">
+              <div class="col flex_2 d_flex fd_column rgap_15">
+                <p class="line-height_016">Let's start a conversation</p>
+                <a href="#" class="sub_text">tafta.id@gmail.com</a>
+              </div>
+              <div class="col flex_2 d_flex fd_column rgap_15">
+                <p class="line-height_016 ws_no-wrap">Based on</p>
+                <div class="list d_flex fd_column rgap_30">
+                  <div class="sub_text ws_no-wrap">Medan, ID</div>
+                  <div class="sub_text ws_no-wrap">Tokyo, JP</div>
+                </div>
+              </div>
+              <div class="col flex_1 d_flex fd_column rgap_20">
+                <p class="line-height_016">Follow me</p>
+                <div class="list d_flex fd_column rgap_30">
+                  <div class="sub_text ws_no-wrap">Instagram <i class="ri-arrow-right-up-line"></i></div>
+                  <div class="sub_text ws_no-wrap">Facebook <i class="ri-arrow-right-up-line"></i></div>
+                  <div class="sub_text ws_no-wrap">WhatsApp <i class="ri-arrow-right-up-line"></i></div>
+                  <div class="sub_text ws_no-wrap">GitHub <i class="ri-arrow-right-up-line"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <div class="row d_flex jc_space-between">
+              <div class="col max-w767_d_none">
+                <a href="#header" onclick="lenis.scrollTo('#header')" class="nav__link nav__logo hovered d_flex ai_center"><div class="circle"></div>Taft ID&reg;</a>
+              </div>
+              <div class="col">
+                <p class="line-height_016">© 2023 Taft ID&reg; LLC. All Rights Reserved</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer Section End -->
+
+      </main>
+      <!-- Light Main End -->
+
+    </div>
+    <!-- Container End -->
+
+    <!-- <div class="wheel_wrapper">
+      <div class="wheel">
+        <div class="lines d_flex jc_center">
+          <div class="line line1 grow-up--line"></div>
+          <div class="line line2 grow-up--line"></div>
+          <div class="line line3 grow-up--line"></div>
+          <div class="line line4 grow-up--line"></div>
+          <div class="line line5 grow-up--line"></div>
+          <div class="line line6 grow-up--line"></div>
+          <div class="line line7 grow-up--line"></div>
+          <div class="line line8 grow-up--line"></div>
+          <div class="line line9 grow-up--line"></div>
+        </div>
+      </div>
+    </div> -->
+
+    <script src="js/index.js"></script>
+  </body>
+
+</html>
