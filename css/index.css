@@ -624,6 +624,10 @@
     display: block;
   }
 
+  .max-w1023_d_inline {
+    display: inline;
+  }
+
   .max-w1023_d_none {
     display: none;
   }
@@ -686,6 +690,10 @@
     display: block;
   }
 
+  .max-w767_d_inline {
+    display: inline;
+  }
+
   .max-w767_d_none {
     display: none;
   }
@@ -746,6 +754,10 @@
 @media (max-width: 479px) {
   .max-w479_d_block {
     display: block;
+  }
+  
+  .max-w479_d_inline {
+    display: inline;
   }
 
   .max-w479_d_none {

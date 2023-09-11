@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Gallery';
-  src: url(../font/Gallery.otf);
+  font-family: 'SALVAGER.otf';
+  src: url(../font/SALVAGER.otf);
 }
 
 :root {
@@ -242,7 +242,7 @@ header .row {
 }
 
 .header__heading span {
-  font-family: 'Gallery';
+  font-family: 'SALVAGER.otf';
   font-size: 10rem;
 }
 
@@ -296,7 +296,7 @@ section {
 }
 
 .title {
-  font-family: 'Gallery';
+  font-family: 'SALVAGER.otf';
   font-size: 7rem;
   color: var(--light);
 }
@@ -685,7 +685,7 @@ footer .hr {
   }
   
   .title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .works .row .pills {
@@ -754,7 +754,16 @@ footer .hr {
   }
 
   .accordion-btn {
-    padding: 20px 0;
+    padding: 15px 0;
+  }
+
+  .panel > *:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .panel .pills * {
+    margin-right: 15px;
+    margin-bottom: 0;
   }
 
   .works .row:nth-child(2) .col:first-child {
